@@ -7,13 +7,13 @@ API_KEY = os.getenv("KIPRISPLUS_API_KEY")
 assert API_KEY, "KIPRISPLUS_API_KEY 없음 (.env 확인)"
 
 # 출원번호 들어있는 엑셀 파일 로드
-excel_file = r"C:\Users\playdata2\Desktop\SKN_AI_20\SKN20-FINAL-2TEAM\data\출원번호\2025_2026.xlsx"  #저장한 경로로 바꿔주세요!
+excel_file = r"/Users/nanahyun/Documents/GitHub/final_develop/data/KIPRIS_xlsx/2024-2026.xlsx"  #저장한 경로로 바꿔주세요!
 wb = openpyxl.load_workbook(excel_file, data_only=True)
 ws = wb.active
 
-# C열(C9부터) 출원번호 추출 
+# B열(B9부터) 출원번호 추출 
 application_numbers = []
-for row in range(197, ws.max_row + 1):
+for row in range(9, ws.max_row + 1):
     cell_value = ws[f'C{row}'].value
     if cell_value:
         application_numbers.append(str(cell_value).strip())
@@ -24,7 +24,7 @@ print(f"📊 {excel_file} 파일에서 {len(application_numbers)}개의 출원�
 base_url = "http://plus.kipris.or.kr/kipo-api/kipi/designInfoSearchService/getBibliographyDetailInfoSearch"
 
 # **중요** 연도수로 폴더명 지정하기! 
-os.makedirs("../data/xml/2025_2026", exist_ok=True) # xml 저장할 폴더 생성
+os.makedirs("../data/xml/2024-2026", exist_ok=True) # xml 저장할 폴더 생성
 
 success_count = 0
 fail_count = 0
@@ -44,7 +44,7 @@ for idx, app_num in enumerate(application_numbers, 1):
         
         # XML 파일로 저장
         if r.status_code == 200:
-            file_path = f"../data/xml/2025_2026/{app_num}.xml" #폴더명 데이터 맞춰서 변경
+            file_path = f"../data/xml/2024-2026/{app_num}.xml" #폴더명 데이터 맞춰서 변경
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(r.text)
             print(f"         ✅ 저장: {file_path}")
@@ -60,6 +60,6 @@ for idx, app_num in enumerate(application_numbers, 1):
         fail_count += 1
 
 print(f"\n✅ 완료: {success_count}개 저장, {fail_count}개 실패")
-print(f"📁 모든 서지상세정보 XML 파일이 '2025_2026' 폴더에 저장되었습니다.") 
+print(f"📁 모든 서지상세정보 XML 파일이 저장되었습니다.") 
 
 
