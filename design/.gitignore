@@ -5,7 +5,7 @@ design/chroma_db_dinov2/
 design/chroma_db_siglip/
 
 
-data/
+data
 chroma_db/
 .env
 __pycache__/
