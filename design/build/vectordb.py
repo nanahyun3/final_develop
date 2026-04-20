@@ -5,22 +5,22 @@ import chromadb
 BASE_DIR = "/Users/nanahyun/Documents/GitHub/final_develop/design/data"
 
 # 원본 임베딩 폴더
-# EMBEDDING_DIR_ORIGINAL = f"{BASE_DIR}/embeddings_original/통합"
-# 스케치 임베딩 폴더
-EMBEDDING_DIR_SKETCH = f"{BASE_DIR}/embeddings_sketch/통합"
+EMBEDDING_DIR_ORIGINAL = f"{BASE_DIR}/embeddings_original/통합"
+# # 스케치 임베딩 폴더
+# EMBEDDING_DIR_SKETCH = f"{BASE_DIR}/embeddings_sketch/통합"
 
 # ChromaDB 클라이언트 초기화
 chroma_client = chromadb.PersistentClient(path=f"{BASE_DIR}/../chroma_db")  # 새로운 DB 경로 설정
 
 # 컬렉션 2개 생성 (이미 존재하면 불러옴)
-# original_collection = chroma_client.get_or_create_collection(
-#     name="design_original",
-#     metadata={"hnsw:space": "cosine"}
-# )
-sketch_collection = chroma_client.get_or_create_collection(
-    name="design_sketch",
+original_collection = chroma_client.get_or_create_collection(
+    name="design_original",
     metadata={"hnsw:space": "cosine"}
 )
+# sketch_collection = chroma_client.get_or_create_collection(
+#     name="design_sketch",
+#     metadata={"hnsw:space": "cosine"}
+# )
 print("컬렉션 생성 완료")
 
 
@@ -63,10 +63,10 @@ def load_to_collection(collection, embedding_dir):
     print(f"✅ {collection.name}: {count}개 저장 완료")
 
 
-# print("\n원본 임베딩 저장 중...")
-# load_to_collection(original_collection, EMBEDDING_DIR_ORIGINAL)
+print("\n원본 임베딩 저장 중...")
+load_to_collection(original_collection, EMBEDDING_DIR_ORIGINAL)
 
-print("\n스케치 임베딩 저장 중...")
-load_to_collection(sketch_collection, EMBEDDING_DIR_SKETCH)
+# print("\n스케치 임베딩 저장 중...")
+# load_to_collection(sketch_collection, EMBEDDING_DIR_SKETCH)
 
 print("\n✅ 모든 embedding json을 벡터 DB에 저장 완료")
