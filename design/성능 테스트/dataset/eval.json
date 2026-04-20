@@ -1,0 +1,146 @@
+{
+  "query_id": "Q001",
+  "application_number": "3020140047287", // 출원번호
+  "query_images": [
+    "queries/3020140047287_1.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020140047287_1.png"
+  ]
+},
+{
+  "query_id": "Q002",
+  "application_number": "3020140047287", // 출원번호
+  "query_images": [
+    "queries/3020140047287_2.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020140047287_2.png"
+  ]
+},
+{
+  "query_id": "Q003",
+  "application_number": "3020140047287", // 출원번호
+  "query_images": [
+    "queries/3020140047287_3.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020140047287_3.png"
+  ]
+},
+{
+  "query_id": "Q004",
+  "application_number": "3020140047289", // 출원번호
+  "query_images": [
+    "queries/3020140047289_1.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020140047289_1.png",
+    "answers/3020140047289_2.png"
+  ]
+},
+{
+  "query_id": "Q005",
+  "application_number": "3020140051521", // 출원번호
+  "query_images": [
+    "queries/3020140051521_1.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020140051521_1.png"
+  ]
+},
+{
+  "query_id": "Q006",
+  "application_number": "3020170053571", // 출원번호
+  "query_images": [
+    "queries/3020170053571_1.png"
+  ],
+  "legal_basis": "33조1항", // 법적 근거
+  "answer_images": [
+    "answers/3020170053571_1.png"
+  ]
+},
+{
+  "query_id": "Q007",
+  "application_number": "3020180012303", // 출원번호
+  "query_images": [
+    "queries/3020180012303_1.png"
+  ],
+  "legal_basis": "33조1항", // 법적 근거
+  "answer_images": [
+    "answers/3020180012303_1.png",
+    "answers/3020180012303_2.png"
+  ]
+},
+{
+  "query_id": "Q008",
+  "application_number": "3020190011526", // 출원번호
+  "query_images": [
+    "queries/3020190011526_1.png"
+  ],
+  "legal_basis": "33조1항", // 법적 근거
+  "answer_images": [
+    "answers/3020190011526_1.png"
+  ]
+},
+{
+  "query_id": "Q009",
+  "application_number": "3020190039427", // 출원번호
+  "query_images": [
+    "queries/3020190039427_1.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020190039427_1.png"
+  ]
+},
+{
+  "query_id": "Q010",
+  "application_number": "3020190039427", // 출원번호
+  "query_images": [
+    "queries/3020190039427_2.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020190039427_2.png"
+  ]
+},
+{
+  "query_id": "Q011",
+  "application_number": "3020200012213", // 출원번호
+  "query_images": [
+    "queries/3020200012213_1.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020200012213_1.png"
+  ]
+},
+{
+  "query_id": "Q012",
+  "application_number": "3020200012213", // 출원번호
+  "query_images": [
+    "queries/3020200012213_2.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020200012213_2.png"
+  ]
+},
+{
+  "query_id": "Q013",
+  "application_number": "3020200012215", // 출원번호
+  "query_images": [
+    "queries/3020200012215_1.png"
+  ],
+  "legal_basis": "33조2항", // 법적 근거
+  "answer_images": [
+    "answers/3020200012215_1.png",
+    "answers/3020200012215_2.png"
+  ]
+}
