@@ -3,7 +3,7 @@ design/data/
 design/chroma_db/
 design/chroma_db_dinov2/
 design/chroma_db_siglip/
-
+design/성능 테스트/dataset/chroma_eval_db/
 
 data
 chroma_db/
