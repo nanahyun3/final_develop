@@ -5,7 +5,6 @@
 ## 주요 기능
 
 - **유사 디자인 검색** — CLIP / DINOv2 / SigLIP 임베딩 + ChromaDB 벡터 검색
-- **Hybrid Retrieval** — Dense(이미지) + BM25(텍스트) 결합 재랭킹
 - **FTO 리포트 생성** — GPT-4o VLM 기반 유사점·차이점 분석
 - **챗봇 인터페이스** — LangGraph 기반 멀티턴 대화
 
